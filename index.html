@@ -4,7 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="calculate">
+        <div class="display"></div>
+        <!-- /.display -->
+        <div class="state-buttons">
+          <button class="button" id="clear">C</button>
+          <button class="button" id="all-clear">AC</button>
+          <button class="button" id="backspace"><-</button>
+          <button class="button" id="revert" disabled>Rvt</button>
+        </div>
+        <!-- /.state-buttons -->
+        <div class="memory-buttons">
+          <button class="button" id="memory-clear">МС</button>
+          <button class="button" id="memory-save">MS</button>
+          <button class="button" id="memory-read">MR</button>
+          <button class="button" id="memory-plus">M+</button>
+          <button class="button" id="memory-minus">M-</button>
+        </div>
+        <!-- /.memory-buttons -->
+        <div class="function-buttons">
+          <button class="button keyboard-button" id="division" value="/">
+            /
+          </button>
+          <button class="button keyboard-button" id="closing-bracket" value="(">
+            (
+          </button>
+          <button class="button keyboard-button" id="multiplication" value="*">
+            *
+          </button>
+          <button class="button keyboard-button" id="closing-bracket" value=")">
+            )
+          </button>
+          <button class="button keyboard-button" id="minus" value="-">-</button>
+          <button class="button" id="result">=</button>
+          <button class="button keyboard-button" id="plus" value="+">+</button>
+        </div>
+        <!-- /.function-buttons -->
+        <div class="keyboard-buttons">
+          <button class="button keyboard-button" id="7" value="7">7</button>
+          <button class="button keyboard-button" id="8" value="8">8</button>
+          <button class="button keyboard-button" id="9" value="9">9</button>
+          <button class="button keyboard-button" id="4" value="4">4</button>
+          <button class="button keyboard-button" id="5" value="5">5</button>
+          <button class="button keyboard-button" id="6" value="6">6</button>
+          <button class="button keyboard-button" id="1" value="1">1</button>
+          <button class="button keyboard-button" id="2" value="2">2</button>
+          <button class="button keyboard-button" id="3" value="3">3</button>
+          <button class="button keyboard-button" id="0" value="0">0</button>
+          <button class="button keyboard-button" id="point" value=".">.</button>
+          <button class="button" id="plus-minus">+/-</button>
+        </div>
+        <!-- /.keyboard-buttons -->
+      </div>
+      <!-- /.calculate -->
+    </div>
+    <!-- /.wrapper -->
+  </body>
 </html>
