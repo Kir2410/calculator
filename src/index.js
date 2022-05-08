@@ -30,7 +30,15 @@ const resultOnDisplay = () => {
   forRevert = display.innerHTML;
   display.innerHTML = eval(display.innerHTML);
   revert.removeAttribute("disabled");
-  // .toFixed(8)
+  if (display.innerHTML.toString().length > 12) {
+    display.innerHTML = eval(display.innerHTML).toExponential(8);
+  }
+  if (
+    (display.innerHTML - eval(display.innerHTML).toFixed(0)).toString().length >
+    8
+  ) {
+    display.innerHTML = eval(display.innerHTML).toFixed(8);
+  }
 };
 
 // очищает дисплей и память
